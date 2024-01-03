@@ -19,11 +19,11 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.tasks.Task
 import com.google.android.material.bottomsheet.BottomSheetDialog
-import com.mkrdeveloper.weatherappexample.adapter.RvAdapter
-import com.mkrdeveloper.weatherappexample.data.forecastModels.ForecastData
-import com.mkrdeveloper.weatherappexample.databinding.ActivityMainBinding
-import com.mkrdeveloper.weatherappexample.databinding.BottomSheetLayoutBinding
-import com.mkrdeveloper.weatherappexample.utils.RetrofitInstance
+import com.example.final_mobile.adapter.RvAdapter
+import com.example.final_mobile.data.forecastModels.ForecastData
+import com.example.final_mobile.databinding.ActivityMainBinding
+import com.example.final_mobile.databinding.BottomSheetLayoutBinding
+import com.example.final_mobile.utils.RetrofitInstance
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
