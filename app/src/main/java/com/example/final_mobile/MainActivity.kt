@@ -27,7 +27,6 @@ import com.example.final_mobile.utils.RetrofitInstance
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException

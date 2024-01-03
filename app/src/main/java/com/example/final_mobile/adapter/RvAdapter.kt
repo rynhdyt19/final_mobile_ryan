@@ -6,8 +6,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.final_mobile.data.forecastModels.ForecastData
 import com.example.final_mobile.databinding.RvItemLayoutBinding
 import com.squareup.picasso.Picasso
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 class RvAdapter( private val forecastArray: ArrayList<ForecastData>) : RecyclerView.Adapter<RvAdapter.ViewHolder>() {
 
@@ -34,12 +34,12 @@ class RvAdapter( private val forecastArray: ArrayList<ForecastData>) : RecyclerV
         }
     }
 
-    private fun displayTime(dtTxt: String): CharSequence? {
-        val input = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
-        val output = DateTimeFormatter.ofPattern("MM-dd HH:mm")
-        val dateTime = LocalDateTime.parse(dtTxt,input)
-        return output.format(dateTime)
+    private fun displayTime(dtTxt: String): String {
+        val inputFormat = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+        val outputFormat = SimpleDateFormat("MM-dd HH:mm", Locale.getDefault())
 
+        val date = inputFormat.parse(dtTxt)
+        return if (date != null) outputFormat.format(date) else ""
     }
 
     override fun getItemCount(): Int {

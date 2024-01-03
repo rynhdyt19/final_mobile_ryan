@@ -31,7 +31,6 @@ class PollutionFragment : Fragment() {
 
         val data = arguments
         val pollutants = listOf(
-            "co" to "CO",
             "nh3" to "NH3",
             "no" to "NO",
             "no2" to "NO2",
@@ -71,7 +70,7 @@ class PollutionFragment : Fragment() {
                 animateY(1000)
         }
 
-        val quarters = arrayOf("", "CO", "NH3", "NO", "NO2", "PM10", "O3", "PM2_5", "so2")
+        val quarters = arrayOf("", "NH3", "NO", "NO2", "PM10", "O3", "PM2_5", "so2")
         val formatter : ValueFormatter = object :ValueFormatter(){
             override fun getAxisLabel(value : Float, axis: AxisBase): String {
                 return quarters[value.toInt()]
