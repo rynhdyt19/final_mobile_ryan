@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Kelompok 4</string>
+    <string name="app_name">Aplikasi Cuaca</string>
     <string name="api_key">b65c9e42d2e09ecb14f48a6adb0e81a1</string>
 
     <string name="good">Good</string>
