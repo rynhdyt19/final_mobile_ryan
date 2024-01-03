@@ -125,7 +125,6 @@ class MainActivity : AppCompatActivity() {
 
                 city = address[0].locality
             }
-
             getCurrentWeather(city)
         }
     }
